@@ -1,18 +1,21 @@
 ReadMe
 ========================================================
 
-This repository contains a single file "run_analysis.R" which performs the following: 
+This repository contains source and supporting files for the Getting and Cleaning Data course (5 May 2014 session) by Jeff Leek.  The course can be found at https://class.coursera.org/getdata-003.
 
-
-
-
-## Overall Approach
+## Assignment
 
 1. Merge the training and the test sets to create one data set.
 2. Extract only the measurements on the mean and standard deviation for each measurement. 
 3. Use descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive activity names. 
 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+## Contents
+
+1. README.md - This file.
+2. CodeBook.md - CodeBook describing transformation and output data
+3. run_analysis.R - Analysis and transformation script.
 
 ## Assumptions
 
@@ -34,4 +37,8 @@ The source data directory is stored in the working directory as "UCI HAR Dataset
 The tidy data set will be stored in the "Output Dataset" directory.
 
 * If the output directory does not exist, the program will create it in the current working directory.
+
+### Style Guide
+
+Naming conventions are per https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml.
 
