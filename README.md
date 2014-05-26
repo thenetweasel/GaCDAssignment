@@ -56,7 +56,29 @@ The tidy data set will be stored in the "Output Dataset" directory.
 
 * If the output directory does not exist, the program will create it in the current working directory.
 
+### Transformations
+
+The source code loads the test and training data sets, reduces them to the "interesting" measurements (those containing means or standard deviations for the time or frequencie domains, as well as mean frequencies for the frequency domain).  The activities (using descriptive names from activity_labels.txt) and Subject identifiers are appended.
+
+The test and training data sets are joined to create a combination data set containing the columns described above.
+
+An output data set is created from the combination data set with the mean column values for each of the subject/activity combinations.
+
+More descriptive / human readable column names are appplied (see codebook).
+
+The output is written to the "Output Dataset" directory with the filename of "UCI HAR Means TidyData.csv
+
 ### Style Guide
 
 Naming conventions are per https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml.
+
+### License
+License:
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
